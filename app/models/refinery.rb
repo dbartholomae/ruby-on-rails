@@ -7,12 +7,13 @@ class Refinery < ApplicationRecord
     end
 
     def to_json
-       "
+       
        {
-        \"name\": \"#{@name}\",
+        "name": "#{@name}",
+        }
         \"country\": \"#{@country}\",
         \"barrelsPerDay\": #{@barrelsPerDay}
-        }
-        "
+       
+        
     end
 end
