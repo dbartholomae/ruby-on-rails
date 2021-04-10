@@ -1,11 +1,18 @@
 class Refinery < ApplicationRecord
+
+    def initialize(name:, country:, barrelsPerDay:)
+        @name = name
+        @country = country
+        @barrelsPerDay = barrelsPerDay 
+    end
+
     def to_json
-       '
+       "
        {
-        "name": "Djarmaya Refinery",
-        "country": "Chad",
-        "barrelsPerDay": 20000
+        \"name\": \"#{@name}\",
+        \"country\": \"#{@country}\",
+        \"barrelsPerDay\": #{@barrelsPerDay}
         }
-        '
+        "
     end
 end

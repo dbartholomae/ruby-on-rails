@@ -2,10 +2,10 @@ require 'rails_helper'
 require "spec_helper"
 
 RSpec.describe Refinery, type: :model do
-    it "returns JSON" do
+    it "returns the given refinery information as JSON" do
 
-    expect(Refinery.new.to_json).to include_json(
-    "name": "Djarmaya Refinery",
+    expect(Refinery.new( name: "Other Refinery", country: "Chad", barrelsPerDay: 20000).to_json).to include_json(
+    "name": "Other Refinery",
     "country": "Chad",
     "barrelsPerDay": 20000
     )
