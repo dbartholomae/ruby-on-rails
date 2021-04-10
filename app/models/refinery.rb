@@ -1,0 +1,2 @@
+class Refinery < ApplicationRecord
+end
