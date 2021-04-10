@@ -27,3 +27,18 @@ If you open this project in Gitpod, you'll get all dependencies pre-installed an
     }]
 }
 ```
+
+### Mob Timer
+
+http://mobtime.herokuapp.com/oil
+
+### Deployment
+
+This repo gets automatically deployed on each push to `master` to [Heroku](https://refinery-api.herokuapp.com/).
+
+### Goals
+
+- [X] Have it deployed in whatever state. To allow continious iteration.
+- [ ] Read the list of refineries from wikipedia and generate JSON.
+- [ ] Add some persistency.
+- [ ] Query for individual refineries.
